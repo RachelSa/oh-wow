@@ -1,3 +1,22 @@
 <style>
-body { background-color: purple; }
+body { 
+  background-color: purple; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>
+
+<img id="x" src="./images/marco.jpg" width="800" height="600" align="middle" alt="">
+
+  <script>
+    const x = document.getElementById("x")
+    let w = 800
+    let h = 600
+    setInterval(() => {
+      w += 8
+      h += 6
+      x.style.width = (w) + "px"
+      x.style.height = (h) + "px"
+    }, 13)
+  </script>
